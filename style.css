@@ -1,4 +1,33 @@
-body {background-color:tan;}
-h1{color:green;}
+body {
+    background-color:black;
+}
+h1 {
+    color:gray;
+    font-family: Verdana;
+}
+.main {
+    background-color: white;
+    margin: auto;
+    max-width: 500px;
+    border-radius: 20px;
+    padding: 20px;
+    padding-top: 30px;
+}
+.slider {
+    width: 40%;
+    height: 10px;
+}
+.calculator {
+    width: 70%;
+    margin: auto;
+    font-family: Arial;
+}
+.copyright {
+    font-family: Arial;
+}
+.markered {
+    background-color: yellow;
+}
+
 
 
