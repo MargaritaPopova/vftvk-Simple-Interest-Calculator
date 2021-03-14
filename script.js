@@ -1,6 +1,6 @@
 
 var year = document.getElementById("years").value;
-
+document.getElementById("principal").focus()
 var slider = document.getElementById("range");
 var output = document.getElementById("rate");
 output.innerHTML = slider.value; // Display the default slider value
@@ -13,7 +13,7 @@ console.log('onload called')
 function compute()
 {
     var principal = document.getElementById("principal").value;
-    if (principal == 0 || principal < 0) {
+    if (principal == 0 || principal < 0 || !principal) {
         alert("Please enter a number that is greater than 0")
         return;
     }
@@ -27,4 +27,3 @@ function compute()
     "You will receive an amount of <span class='markered'>" + final + "</span>,<br>" +
     "in the year <span class='markered'>" + (2021+year) + "</span>.<br>";
 }
-        
