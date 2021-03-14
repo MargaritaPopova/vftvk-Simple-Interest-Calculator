@@ -13,6 +13,9 @@ console.log('onload called')
 function compute()
 {
     var principal = document.getElementById("principal").value;
+    if (principal == 0 || principal < 0) {
+        alert("Please enter a number that is greater than 0")
+    }
     var rate = parseFloat(document.getElementById("range").value);
     var year = parseInt(document.getElementById("years").value);
     var final = principal * (rate/100) * year;
